@@ -36,9 +36,12 @@ body {
 	grid-area: nav;
 	background-color: red;
 	display: grid;
-	grid-template: 20% 1fr / 1fr;
-	align-items: center;
+	/* grid-template: 45% 15% / 1fr; */
+	align-content: center;
 	justify-content: center;
+	/* align-items: center; */
+	/* justify-items: center; */
+	width: 100%;
 }
 
 .content {
@@ -71,14 +74,35 @@ h1 {
 }
 
 /* Nav */
+.content_nav p, .inav {
+	display: grid;
+	align-items: center;
+	justify-items: center; */
+}
 
+.inav img {
+	width: 35%;
+}
+
+.menuA {
+	/* display: inline-flex; */
+	position: relative;
+}
+
+.hoverNav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.menuI:hover .hovernav {
+	display: inline-flex;
+}
 
 a {
 	text-decoration: none;
 }
 
 /* Content */
-.content_nav {
-	position: fixed;
-}
 
