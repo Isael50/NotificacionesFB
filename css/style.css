@@ -1,12 +1,84 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
+} */
+
+:root {
+	--cFacebook: #4267b2;
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Lato', sans-serif;
 }
 
+/* Container */
 .container {
-	
+	display: grid;
+	grid-template: 15% 1fr 25% / 18% 1fr;
+	grid-template-areas: "header header"
+						 "nav content"
+						 "footer footer";
+	max-height: 100vh;
 }
+
+.header {
+	grid-area: header;
+	/* background-color: aqua; */
+	border: 3px solid red;
+	display: grid;
+	grid-template: 100% / 20% 1fr 20%;
+	/* position: sticky; */
+	/* top: 0px; */
+}
+
+.nav {
+	grid-area: nav;
+	background-color: red;
+	display: grid;
+	grid-template: 20% 1fr / 1fr;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	grid-area: content;
+	/* background-color: blue; */
+	border: 3px solid red;
+	overflow-y: scroll;
+}
+
+.footer {
+	grid-area: footer;
+	/* background-color: orange; */
+	border: 3px solid red;
+}
+
+/* Header */
+.header2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2em;
+	color: var(--cFacebook);
+}
+
+.facebook {
+	color: var(--cFacebook);
+}
+
+/* Nav */
+
+
+a {
+	text-decoration: none;
+}
+
+/* Content */
+.content_nav {
+	position: fixed;
+}
+

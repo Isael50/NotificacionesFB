@@ -5,21 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Notificaciones de Facebook</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,800&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<section class="Container">
-		<header class="Header">
-			<h1 class="title">- Notificaciones de Faceboook -</h1>
+	<section class="container">
+		<header class="header">
+			<div class="header1"></div>
+			<div class="header2">
+				<h1 class="title">- Notificaciones de Faceboook -</h1>
+			</div>
+			<div class="header3"></div>
 		</header>
-		<nav class="Nav">
+		<nav class="nav">
 			<div class="content_nav">
-				<p class="nav1">Activar las notificaciones Web</p>
-				<p class="nav2">Aceptar la invitación para ser evaluador</p>
-				<p class="nav3">Validar el Chatbot</p>
+				<a href="#order1">
+					<figure class="inav">
+						<img src="./image/activar.png" alt="Activar" />
+					</figure>
+					<p>Activar las notificaciones Web</p>
+				</a>
+			</div>
+			<div class="content_nav">
+				<a href="#order2">
+					<figure class="inav">
+						<img src="./image/aceptar.png" alt="Aceptar" />
+					</figure>
+					<p>Aceptar la invitación para ser evaluador</p>
+				</a>
 			</div>
 		</nav>
-		<section class="Content">
+		<section class="content">
 			<ol id="order1" class="order_list1">
 				<li class="items_ol">
 					<p>Inicia la sesión con tu usuario de <span class="facebook">Facebook</span>.</p>
@@ -63,7 +79,7 @@
 				<p class="nota">Nota: Esto solo lo estamos haciendo porque el Chatbot está en etapa de Desarrollo una vez que está en producción los usuarios ya no tiene que hacer esto, solosera cosa de abrir el enlace o buscarlo por el nombre.</p>
 			</ol>
 		</section>
-		<footer class="Footer">
+		<footer class="footer">
 			<h3 class="content_footer">Enlaces de <span class="facebbok">Facebook</span></h3>
 			<p class="title_footer">Aplicación de escritorio para Windows</p>
 			<a href="https://www.facebook.com/help/1629618250697337/?helpref=hc_fnav" target="_blank">¿Cómo activo y desactivo las notificaciones de Facebook para computadoras de Windows?</a>
