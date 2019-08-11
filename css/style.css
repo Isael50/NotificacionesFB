@@ -34,7 +34,8 @@ body {
 
 .nav {
 	grid-area: nav;
-	background-color: red;
+	border: 3px solid red;
+	/* background-color: red; */
 	display: grid;
 	/* grid-template: 45% 15% / 1fr; */
 	align-content: center;
@@ -94,10 +95,16 @@ h1 {
 	top: 0;
 	left: 0;
 	display: none;
+	/* width: 5%; */
 }
 
-.menuI:hover .hovernav {
+.menuA:hover .hoverNav {
 	display: inline-flex;
+	width: 35%;
+}
+
+.menuA:hover p {
+	color: red;
 }
 
 a {
